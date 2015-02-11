@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>HTML for testing JS</title>
+<script src="expectedDrops.js"></script>
+</head>
+<body>
+Some body.
+</body>
+</html>

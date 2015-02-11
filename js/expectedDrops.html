@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>HTML for testing JS</title>
+        <script src="Chart.js"></script>
+        <script src="require.js"></script>
+        <style>
+            input[type="number"]{
+                width: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="compareChart" width="800" height="400"></canvas>
+        <!--
+        <canvas id="diffChart" width="400" height="400"></canvas>
+        -->
+        <br/>
+        <div>
+            <table style="display:inline;">
+                <th>Main Attack</th>
+                <tr>
+                    <td><label for="mainProficiency">Proficiency</label></td>
+                    <td><input type="number" id="mainProficiency"></td>
+                </tr>
+                <tr>
+                    <td><label for="mainAbilityMod">Ability Modifier</label></td>
+                    <td><input type="number" id="mainAbilityMod"></td>
+                </tr>
+                <tr>
+                    <td><label for="mainAttackMod">MISC Attack Modifier</label></td>
+                    <td><input type="number" id="mainAttackMod"></td>
+                </tr>
+                <tr>
+                    <td><label for="mainDamageMod">MISC Damage Modifier</label></td>
+                    <td><input type="number" id="mainDamageMod"></td>
+                </tr>
+                <tr>
+                    <td><label for="mainDieSize">Die Size</label></td>
+                    <td><input type="number" id="mainDieSize"></td>
+                </tr>
+            </table>
+            <table style="display:inline;">
+                <th>Side Arm Attack</th>
+                <tr>
+                    <td><label for="sideProficiency">Proficiency</label></td>
+                    <td><input type="number" id="sideProficiency"></td>
+                </tr>
+                <tr>
+                    <td><label for="sideAbilityMod">Ability Modifier</label></td>
+                    <td><input type="number" id="sideAbilityMod"></td>
+                </tr>
+                <tr>
+                    <td><label for="sideAttackMod">MISC Attack Modifier</label></td>
+                    <td><input type="number" id="sideAttackMod"></td>
+                </tr>
+                <tr>
+                    <td><label for="sideDamageMod">MISC Damage Modifier</label></td>
+                    <td><input type="number" id="sideDamageMod"></td>
+                </tr>
+                <tr>
+                    <td><label for="sideDieSize">Die Size</label></td>
+                    <td><input type="number" id="sideDieSize"></td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            
+            <label for="armorClass">Target Armor Class</label>
+            <input type="number" id="armorClass">
+            <br/>
+            <br/>
+            
+            <label for="attacks">Number of Attacks</label>
+            <input type="number" id="attacks">
+            <br/>
+            <br/>
+            
+            <button onclick="calculate()">Calculate!</button>
+        </div>
+        <br/>
+        <br/>
+        
+        <script src="expectedDrops.js"></script>
+        
+    </body>
+</html>
